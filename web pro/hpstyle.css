@@ -1,0 +1,143 @@
+#navbar
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+#nav
+{
+    box-shadow: lightgray 0 0 5px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+#pick-add
+{
+    margin: auto 30px;
+}
+#pick-add > div
+{
+    display: flex;
+}
+#pick-add > div p
+{
+     font-size: 20px;
+}
+#pick-add > h4
+{
+    cursor: pointer;
+    font-weight:500;
+    font-size: 14px;
+    display: inline;
+}
+#pick-add > i
+{
+    font-size: 14px;
+    cursor: pointer;
+}
+#topic{
+    color:rgba(4, 94, 4, 0.816);
+    font-style: italic;
+    padding-left: 100px;
+    text-align: left;
+    text-indent: 10px;
+    margin-right: auto 2px;
+    border-right: solid 2px black;
+    padding-right: 50px;
+   }
+@media screen and (max-width:1150px)
+{
+   h2#topic
+   {
+    padding-left: 0px;
+    font-size:20px;
+   } 
+   div>p#d
+   {
+    font-size: 10px;
+   }
+   h4#p
+   {
+    font-size: 10px;
+   }
+}
+@media screen and (max-width:800px)
+{
+   div>p#d
+   {
+    display:none;
+   }   
+   h4#p
+   {
+    display: none;
+   }
+   i#arr
+   { 
+    display: none;
+   }
+}
+@media screen and (max-width:500px)
+{
+   h2#topic
+   {
+    font-size:10px;
+   } 
+}
+#list
+{  
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    margin:auto 20px;
+}
+@media screen and (max-width:1000px) {
+    div#nav>ul li p
+    {
+        display:none;
+    }
+}
+#nav > ul li a
+{
+    margin: 10px 15px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+}
+#nav > ul li p
+{
+    display: flex;
+    margin-left: 5px;
+    font-size: 20px;
+}
+#nav > ul li img
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 35px;
+    height: 30px;
+}
+#nav > ul li a:hover
+{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    color: black;
+}
+#fir > a:hover
+{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    color:rgb(211, 11, 175);
+}
+#fir > a
+{
+    text-decoration: none;
+    color: darkorchid;
+    font-size: medium;
+    font-family: cursive;
+}

@@ -1,0 +1,217 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+}
+indide div then little bit width increases
+*/
+
+
+.container{
+    
+    border: 2px solid blanchedalmond;    
+}
+.main_box{
+    display: flex;
+    gap:30px;
+}
+.return_back{
+    display: flex;
+    justify-content: start;
+    align-items : center;
+    gap:10px;
+    color:rgb(79, 88, 94);
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;   
+}
+
+.heading{
+    color:RGB(79, 88, 94);
+    font-family: "Open Sans", sans-serif;
+    font-size:26px;
+    font-weight:700;
+}
+.box{
+    width: 150%;/*****************##################***/
+    padding: 30px 20px 20px;
+    background-color: #10847e;/*(16,132,126)*/
+    border-radius: 6px;/**NICE RADIUS - NOT 25PX**/
+    margin-bottom: 30px;
+    color: white;
+    font-family:"Open Sans",sans-serif;
+    height: fit-content;/******###############*************/
+
+
+}
+.box1_line1{
+    font-size:12px;
+    display: flex;
+    align-items : center;
+    gap:35px;
+    margin-bottom: 30px;
+}
+.box1_line2{
+    font-family:"Open Sans",sans-serif;
+    font-size:16px;
+    font-weight:700;
+    margin-bottom: 30px;
+
+}
+.box1_line3{
+    
+    display: grid;/********************************** flex gives some space at bottom
+    grid-auto-rows: 1fr;*/
+    grid-template-columns: 1fr 2.5fr 40px;/***********************fr unt????????????????????**********/
+      
+}
+
+
+
+
+.line3_col1{
+    padding-left: 10px;
+    background-color:rgb(244,247,251);
+    color:  #10847e;
+
+    font-size:16px;
+    font:bold;
+    font-weight: 600;
+
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+
+    display: flex;
+    align-items : center; /*******************************Why is vertical-align: middle not working on my span or div?***************************/
+    
+}
+
+.down_icon{
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 10px;
+    position: relative;
+    bottom: 2px;
+    
+}
+
+.inp,.box1_line3{
+      
+    border: none;/*********************************************/
+   /* line-height: 1em;*/
+
+   /****************************MAKING DIV AND INPUT OF EQUAL HEIGHT IS MADE POSSIBLE ONLY  with font size and height****/
+   /*font-size: 1.5rem; /************VERY IMP******************/
+   height: 52px;  /*2.8em****************VERY IMP***************/
+   font-size: 16px; 
+}
+
+
+/*
+.select_pincode{
+    vertical-align: middle;
+    position: relative; 
+    top:10px;
+}
+
+.select_pincode{
+    padding-top: 10px;
+}
+*/
+.search_div{
+    background-color:aliceblue;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.search_icon{
+    position: relative;
+    top:15px;
+    left: 5px;
+    font-size: 25px;
+}
+
+.main_box2{
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 6px;
+    display: flex;
+    gap: 10px;
+    width:100%;/**************************###########################*****************************/
+    height: fit-content;
+    padding: 20px;
+    
+}
+.arrow{
+    padding-left:140px ;/**************change******************/
+    font-size: 20px;
+    font-weight:900;
+}
+.box2_icon1,.box3_icon1{
+    font-size: 20px;
+}
+.main_box3{
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 6px;
+    height: fit-content;
+    margin-top: 20px;
+    padding: 20px;
+}
+.main_boxes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;/*****************************#######################*************************/
+}
+.main_box3{
+    display: flex;
+    gap: 10px;
+}
+.Order_with_prescription,.no_prescription{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight:600;
+    line-height:24px;
+    color: #0c4744;
+}
+.call{
+    background-color: #10847e;
+    width:fit-content;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight:600;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/*
+@media only screen and (max-width: 600px) {
+    .box{
+        width: 100%;  
+    }
+    .box1_line3{
+        display: grid;
+        grid-template-columns: 30% 50% 40px;
+    }
+  }
+*/
+.arrow2{
+    font-size: 20px;
+    font-weight:900;
+    padding-left: 125px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .container{
+       
+    }
+    .main_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_boxes{
+        padding: 0;
+    }
+    .box{
+        width: 100%;
+    }
+  }
+
